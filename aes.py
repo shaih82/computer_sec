@@ -2,12 +2,6 @@ import numpy as np
 
 msg = 'abc'
 
-def transposition(msg):
-    '''
-    returns transposed msg
-    '''
-    pass
-    
 K = np.diag(np.ones(8))
 np.random.shuffle(K)
 b_msg = np.asarray([list(format(ord(x), 'b')) for x in msg]).astype('int32')
